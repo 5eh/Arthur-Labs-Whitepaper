@@ -1,4 +1,4 @@
-// File: /home/babes/Desktop/Arthur Labs/ArthurLabs/pdf-viewer/src/app/layout.tsx
+// File: /home/babes/Desktop/Arthur Labs/ArthurLabs/Whitepaper_viewer/src/app/layout.tsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
