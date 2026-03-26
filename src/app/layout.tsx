@@ -1,37 +1,59 @@
-import { Analytics } from "@vercel/analytics/react";
+import type { Metadata } from "next";
+import { Unbounded, Inter } from "next/font/google";
 import "./globals.css";
-import type { Metadata, Viewport } from "next";
+import Nav from "~~/components/nav";
+import { Analytics } from "@vercel/analytics/react";
+import { Footer } from "~~/components/footer";
+
+const unbounded = Unbounded({
+  variable: "--font-unbounded",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+});
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: {
-    default: "Whitepaper | Arthur Labs Inc.",
-    template: "%s | Arthur Labs Inc.",
+    default: "Arthur Labs Whitepaper",
+    template: "%s | Arthur Labs Whitepaper",
   },
   description:
-    "View the Arthur Labs Whitepaper in a clean, minimalist PDF viewer with a black background. Learn about Arthur Labs and their innovations in blockchain commerce.",
+    "Arthur Labs Whitepaper v1.1.0 — The Blockchain built for the internet. Learn about the VAULT blockchain, DEAN, ROSE, QUINN, SUSAN, and BUILDER systems for decentralized commerce.",
   keywords: [
     "Arthur Labs",
     "whitepaper",
     "blockchain",
-    "commerce",
-    "web3",
-    "pdf viewer",
+    "VAULT",
+    "decentralized commerce",
+    "DEAN",
+    "ROSE",
+    "QUINN",
+    "smart contracts",
+    "Web3",
+    "ART token",
+    "oracle validation",
   ],
-  authors: [{ name: "Arthur Labs" }],
+  authors: [{ name: "Watson Lewis-Rodriguez" }],
   openGraph: {
-    title: "Whitepaper | Arthur Labs Inc.",
+    title: "Arthur Labs Whitepaper",
     description:
-      "View the Arthur Labs Whitepaper in a clean, minimalist PDF viewer with a black background.",
+      "The Blockchain built for the internet. Explore the architecture, systems, and token economics of Arthur Labs.",
     type: "website",
     url: "https://whitepaper.arthurlabs.net",
-    siteName: "Arthur Labs Inc.",
+    siteName: "Arthur Labs Whitepaper",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Whitepaper | Arthur Labs Inc.",
+    title: "Arthur Labs Whitepaper",
     description:
-      "View the Arthur Labs Whitepaper in a clean, minimalist PDF viewer with a black background.",
+      "The Blockchain built for the internet. Explore the architecture, systems, and token economics of Arthur Labs.",
     creator: "@ArthurLabsDAO",
   },
   robots: {
@@ -40,20 +62,18 @@ export const metadata: Metadata = {
   },
 };
 
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-};
-
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode;
-}) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=5"
+        />
         <link rel="canonical" href="https://whitepaper.arthurlabs.net" />
+        <link rel="manifest" href="/manifest.json" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -65,7 +85,7 @@ export default function RootLayout({
                   "@id": "https://whitepaper.arthurlabs.net/#article",
                   headline: "Arthur Labs Whitepaper",
                   description:
-                    "View the Arthur Labs Whitepaper. Learn about Arthur Labs and their innovations in blockchain commerce.",
+                    "Technical whitepaper detailing the VAULT blockchain architecture, smart contract standards, and ecosystem systems built by Arthur Labs.",
                   author: {
                     "@id": "https://arthurlabs.net/#organization",
                   },
@@ -73,6 +93,8 @@ export default function RootLayout({
                     "@id": "https://arthurlabs.net/#organization",
                   },
                   inLanguage: "en",
+                  version: "1.1.0",
+                  datePublished: "2025-04-19",
                 },
                 {
                   "@type": "WebSite",
@@ -88,8 +110,21 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>
-        {children}
+      <body
+        className={`${unbounded.variable} ${inter.variable} antialiased
+          transition-colors duration-300
+          bg-white dark:bg-neutral-950
+          text-zinc-900 dark:text-white`}
+      >
+        <div className="z-[9999] w-full flex fixed bottom-0 justify-end p-4">
+          <Nav />
+        </div>
+        <main className="min-h-screen transition-colors duration-300 relative z-[1]">
+          {children}
+        </main>
+        <div className="block relative z-[2]">
+          <Footer />
+        </div>
         <Analytics />
       </body>
     </html>
