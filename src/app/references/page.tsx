@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "References",
   description:
     "Academic and industry references cited in the Arthur Labs Whitepaper, including research on blockchain, smart contracts, and real-world assets.",
+  alternates: { canonical: "/references/" },
 };
 
 export default function ReferencesPage() {

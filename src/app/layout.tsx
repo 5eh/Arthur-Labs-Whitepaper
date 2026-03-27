@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "~~/components/nav";
 import { Analytics } from "@vercel/analytics/react";
 import { Footer } from "~~/components/footer";
+import EcosystemBar from "~~/components/EcosystemBar";
 
 const unbounded = Unbounded({
   variable: "--font-unbounded",
@@ -19,6 +20,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://whitepaper.arthurlabs.net'),
   title: {
     default: "Arthur Labs Whitepaper",
     template: "%s | Arthur Labs Whitepaper",
@@ -72,7 +74,6 @@ export default function RootLayout({
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=5"
         />
-        <link rel="canonical" href="https://whitepaper.arthurlabs.net" />
         <link rel="manifest" href="/manifest.json" />
         <script
           type="application/ld+json"
@@ -116,6 +117,7 @@ export default function RootLayout({
           bg-white dark:bg-neutral-950
           text-zinc-900 dark:text-white`}
       >
+        <EcosystemBar />
         <div className="z-[9999] w-full flex fixed bottom-0 justify-end p-4">
           <Nav />
         </div>

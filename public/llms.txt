@@ -1,0 +1,33 @@
+# Arthur Labs Whitepaper
+
+> The Arthur Labs Whitepaper v1.1.0 (whitepaper.arthurlabs.net) presents the technical architecture of Arthur Labs' blockchain ecosystem. It details the VAULT blockchain, a custom Layer 1/Layer 2 system designed for decentralized commerce, and the four core systems: DEAN (marketplace factory), ROSE (centralized commerce), QUINN (social media automation), and SUSAN (app generation). The whitepaper covers token economics for the ART token, oracle validation mechanisms, smart contract standards, and deployment architecture.
+
+## Whitepaper Sections
+
+- [Home](https://whitepaper.arthurlabs.net/): Whitepaper landing page and executive summary
+- [Disclaimer](https://whitepaper.arthurlabs.net/disclaimer): Legal disclaimers and limitations
+- [Introduction](https://whitepaper.arthurlabs.net/introduction): Problem statement, vision, and scope of Arthur Labs
+- [Architecture](https://whitepaper.arthurlabs.net/architecture): VAULT blockchain technical architecture, consensus mechanisms, and chain design
+- [Systems](https://whitepaper.arthurlabs.net/systems): Detailed specifications of DEAN, ROSE, QUINN, and SUSAN systems
+- [Token](https://whitepaper.arthurlabs.net/token): ART token economics, distribution, utility, and governance
+- [Deployments](https://whitepaper.arthurlabs.net/deployments): Smart contract deployment addresses and network information
+- [References](https://whitepaper.arthurlabs.net/references): Academic and technical references cited in the whitepaper
+
+## Key Concepts
+
+- **VAULT Blockchain**: Custom blockchain infrastructure built for internet commerce
+- **DEAN**: Decentralized multi-chain marketplace factory enabling permissionless marketplace deployment
+- **ROSE**: Centralized commerce engine for traditional e-commerce integrated with blockchain
+- **QUINN**: Social media automation and marketing tools
+- **SUSAN**: AI-powered full-stack application generation system
+- **ART Token**: Native utility and governance token of the Arthur Labs ecosystem
+- **Oracle Validation**: Decentralized validation mechanism for peer-to-peer commerce transactions
+
+## Downloads
+
+- [Full PDF Whitepaper](https://whitepaper.arthurlabs.net/Arthur_Labs_Whitepaper.pdf)
+
+## Author
+
+- Watson Lewis-Rodriguez, Arthur Labs Inc.
+- Contact: support@arthurlabs.net

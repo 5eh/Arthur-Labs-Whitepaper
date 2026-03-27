@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Deployments",
   description:
     "Arthur Labs initial marketplace deployments across Polygon, Optimism, Ethereum, Arbitrum, and Rootstock blockchain ecosystems.",
+  alternates: { canonical: "/deployments/" },
 };
 
 export default function DeploymentsPage() {

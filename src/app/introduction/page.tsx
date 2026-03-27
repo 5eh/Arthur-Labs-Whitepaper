@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Introduction",
   description:
     "Introduction to Arthur Labs — tools, blockchain, contract standards, and layered applications for decentralized commerce, services, and deliveries.",
+  alternates: { canonical: "/introduction/" },
 };
 
 export default function IntroductionPage() {

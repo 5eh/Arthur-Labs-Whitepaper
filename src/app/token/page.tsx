@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "ART Token",
   description:
     "ART Token overview — VAU native token, token utility, economics, sale details, and the platform revenue model for the Arthur Labs VAULT blockchain.",
+  alternates: { canonical: "/token/" },
 };
 
 export default function TokenPage() {

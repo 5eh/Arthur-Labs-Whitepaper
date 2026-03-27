@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Disclaimer",
   description:
     "Legal disclaimer for the Arthur Labs Whitepaper. This document is not an offer to sell or solicitation to buy tokens.",
+  alternates: { canonical: "/disclaimer/" },
 };
 
 export default function DisclaimerPage() {

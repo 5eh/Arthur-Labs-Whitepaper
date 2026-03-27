@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Provided Systems",
   description:
     "Arthur Labs ecosystem systems — DEAN digital bazaar factory, ROSE Web2 marketplace builder, QUINN marketing automation, SUSAN application builder, and BUILDER website development.",
+  alternates: { canonical: "/systems/" },
 };
 
 export default function SystemsPage() {

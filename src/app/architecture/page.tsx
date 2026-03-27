@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Architecture",
   description:
     "VAULT blockchain architecture — Layer 1 through Layer 4 infrastructure including core functionality, oracle validation, token economics, and contract standards.",
+  alternates: { canonical: "/architecture/" },
 };
 
 export default function ArchitecturePage() {
