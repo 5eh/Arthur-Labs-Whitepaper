@@ -134,10 +134,10 @@ export default function EcosystemBar() {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          borderBottom: "1px solid var(--border)",
+          borderBottom: "1px solid var(--_eb-border)",
           backdropFilter: "blur(12px)",
           WebkitBackdropFilter: "blur(12px)",
-          backgroundColor: "var(--background)",
+          backgroundColor: "var(--_eb-bg)",
           opacity: 0.97,
         }}
       >
@@ -161,11 +161,11 @@ export default function EcosystemBar() {
             style={{
               fontSize: 11,
               fontWeight: 700,
-              color: "var(--muted-foreground)",
+              color: "var(--_eb-muted)",
               whiteSpace: "nowrap",
               marginRight: 6,
               letterSpacing: "0.03em",
-              fontFamily: "var(--font-heading), sans-serif",
+              fontFamily: "system-ui, -apple-system, sans-serif",
               userSelect: "none",
               flexShrink: 0,
             }}
@@ -177,7 +177,7 @@ export default function EcosystemBar() {
             style={{
               width: 1,
               height: 14,
-              backgroundColor: "var(--border)",
+              backgroundColor: "var(--_eb-border)",
               flexShrink: 0,
               marginLeft: 4,
               marginRight: 4,
@@ -199,26 +199,26 @@ export default function EcosystemBar() {
                   paddingRight: 8,
                   borderRadius: 4,
                   color: isActive
-                    ? "var(--foreground)"
-                    : "var(--muted-foreground)",
+                    ? "var(--_eb-fg)"
+                    : "var(--_eb-muted)",
                   fontWeight: isActive ? 600 : 400,
                   textDecoration: "none",
                   transition: "color 0.15s, background-color 0.15s",
-                  fontFamily: "var(--font-sans), sans-serif",
+                  fontFamily: "system-ui, -apple-system, sans-serif",
                   flexShrink: 0,
                   backgroundColor: isActive
-                    ? "var(--accent)"
+                    ? "var(--_eb-accent)"
                     : "transparent",
                 }}
                 onMouseEnter={(e) => {
                   if (!isActive) {
-                    e.currentTarget.style.color = "var(--foreground)";
-                    e.currentTarget.style.backgroundColor = "var(--accent)";
+                    e.currentTarget.style.color = "var(--_eb-fg)";
+                    e.currentTarget.style.backgroundColor = "var(--_eb-accent)";
                   }
                 }}
                 onMouseLeave={(e) => {
                   if (!isActive) {
-                    e.currentTarget.style.color = "var(--muted-foreground)";
+                    e.currentTarget.style.color = "var(--_eb-muted)";
                     e.currentTarget.style.backgroundColor = "transparent";
                   }
                 }}
@@ -240,19 +240,19 @@ export default function EcosystemBar() {
             paddingLeft: 12,
             paddingRight: 12,
             borderRadius: 4,
-            color: "var(--muted-foreground)",
+            color: "var(--_eb-muted)",
             fontWeight: 500,
             textDecoration: "none",
             transition: "color 0.15s, background-color 0.15s",
-            fontFamily: "var(--font-sans), sans-serif",
+            fontFamily: "system-ui, -apple-system, sans-serif",
             flexShrink: 0,
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.color = "var(--foreground)";
-            e.currentTarget.style.backgroundColor = "var(--accent)";
+            e.currentTarget.style.color = "var(--_eb-fg)";
+            e.currentTarget.style.backgroundColor = "var(--_eb-accent)";
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.color = "var(--muted-foreground)";
+            e.currentTarget.style.color = "var(--_eb-muted)";
             e.currentTarget.style.backgroundColor = "transparent";
           }}
         >
@@ -260,8 +260,32 @@ export default function EcosystemBar() {
         </a>
       </div>
 
-      {/* Hide scrollbar for the inner container */}
       <style>{`
+        .ecosystem-bar {
+          --_eb-bg: #ffffff;
+          --_eb-fg: #0a0a0a;
+          --_eb-muted: #6b7280;
+          --_eb-border: #e5e7eb;
+          --_eb-accent: #f3f4f6;
+        }
+        @media (prefers-color-scheme: dark) {
+          .ecosystem-bar {
+            --_eb-bg: #0a0a0a;
+            --_eb-fg: #ededed;
+            --_eb-muted: #9ca3af;
+            --_eb-border: #27272a;
+            --_eb-accent: #1f1f23;
+          }
+        }
+        .dark .ecosystem-bar,
+        html.dark .ecosystem-bar,
+        [data-theme="dark"] .ecosystem-bar {
+          --_eb-bg: #0a0a0a;
+          --_eb-fg: #ededed;
+          --_eb-muted: #9ca3af;
+          --_eb-border: #27272a;
+          --_eb-accent: #1f1f23;
+        }
         .ecosystem-bar-scroll::-webkit-scrollbar {
           display: none;
         }
