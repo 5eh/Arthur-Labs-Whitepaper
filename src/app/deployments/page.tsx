@@ -123,7 +123,7 @@ export default function DeploymentsPage() {
 
       <div className="flex justify-between mt-16 pt-8 border-t border-border">
         <Link href="/token">
-          <Button variant="outline">Prev: ART Token</Button>
+          <Button variant="outline">Prev: HIIE System</Button>
         </Link>
         <Link href="/references">
           <Button>Next: References</Button>

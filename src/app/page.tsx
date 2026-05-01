@@ -18,19 +18,19 @@ const sections = [
     title: "Architecture",
     href: "/architecture",
     description:
-      "Layer 1-4 infrastructure: core functionality, oracle validation, token economics, contract standards.",
+      "Layer 1-4 infrastructure: core functionality, oracle validation, native currency, contract standards.",
   },
   {
     title: "Provided Systems",
     href: "/systems",
     description:
-      "DEAN, ROSE, QUINN, SUSAN, and BUILDER system descriptions.",
+      "DEAN, ROSE, QUINN, SUSAN, BUILDER, and HIIE system descriptions.",
   },
   {
-    title: "ART Token",
+    title: "HIIE System",
     href: "/token",
     description:
-      "Token overview, utility, economics, sale details, and revenue model.",
+      "Hyper Intelligent Innovation Engine — AI-driven multi-agent innovation pipeline, use cases, and revenue model.",
   },
   {
     title: "Deployments",

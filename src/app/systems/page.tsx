@@ -139,9 +139,8 @@ export default function SystemsPage() {
         <p>
           BUILDER is an Arthur Labs website builder, dedicated primarily to
           contract development work to various USA sites, but is globally
-          accessible for work. Revenue generated from BUILDER proceeds to then
-          fund the core development of the overall ecosystem, and any excess
-          profits go into the token holders.
+          accessible for work. Revenue generated from BUILDER proceeds to fund
+          the core development of the overall ecosystem.
         </p>
       </div>
 
@@ -150,7 +149,7 @@ export default function SystemsPage() {
           <Button variant="outline">Prev: Architecture</Button>
         </Link>
         <Link href="/token">
-          <Button>Next: ART Token</Button>
+          <Button>Next: HIIE System</Button>
         </Link>
       </div>
     </div>

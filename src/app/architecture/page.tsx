@@ -5,7 +5,7 @@ import { Button } from "~~/components/ui/button";
 export const metadata: Metadata = {
   title: "Architecture",
   description:
-    "VAULT blockchain architecture — Layer 1 through Layer 4 infrastructure including core functionality, oracle validation, token economics, and contract standards.",
+    "VAULT blockchain architecture — Layer 1 through Layer 4 infrastructure including core functionality, oracle validation, native currency, and contract standards.",
   alternates: { canonical: "/architecture/" },
 };
 
@@ -99,14 +99,9 @@ export default function ArchitecturePage() {
         <p>
           The VAULT implements a robust Proof of Stake (PoS) consensus mechanism
           that serves both transaction validation and oracle validation purposes.
-          The system utilizes two distinct token classes within the ART ecosystem:
+          The native staking currency is VAU, which governs blockchain
+          transactions and enables staked nodes to work as standalone operators.
         </p>
-        <ul className="list-disc pl-6 space-y-2">
-          <li>
-            <strong>&quot;VAU&quot;</strong> &mdash; Governing blockchain
-            transactions and staked tokens work as standalone node operators
-          </li>
-        </ul>
 
         <h4 className="text-lg font-semibold mt-6 mb-2">
           Transaction Validation
@@ -142,108 +137,37 @@ export default function ArchitecturePage() {
           conditions, and timelocked withdrawals to ensure network integrity.
         </p>
 
-        <h3 className="text-xl font-semibold mt-8 mb-3">Token Economics</h3>
+        <h3 className="text-xl font-semibold mt-8 mb-3">Native Currency</h3>
         <p>
-          The native currency is &quot;ART&quot;, implementing a standard Proof
-          of Stake mechanism with enhanced utility across the VAULT ecosystem.
-          The token economics are designed to create a sustainable and
-          value-driven ecosystem through multiple mechanisms:
+          The native currency of the VAULT is VAU, which serves as the primary
+          medium of exchange across the ecosystem.
         </p>
-
-        <h4 className="text-lg font-semibold mt-6 mb-2">
-          Revenue Distribution
-        </h4>
-        <ul className="list-decimal pl-6 space-y-3">
-          <li>
-            <strong>Direct Distribution to Staked Holders:</strong> Revenue from
-            transaction fees and marketplace operations is distributed
-            proportionally to staked token holders.
-          </li>
-          <li>
-            <strong>Ecosystem Reinvestment:</strong> A portion of revenue is
-            automatically reinvested into ecosystem development, funding
-            technical improvements, security audits, and infrastructure
-            expansion.
-          </li>
-          <li>
-            <strong>Treasury Allocation:</strong> Strategic reserves are
-            maintained in the treasury to ensure long-term ecosystem stability
-            and fund future expansion initiatives.
-          </li>
-        </ul>
 
         <h4 className="text-lg font-semibold mt-6 mb-2">
           Core Utility Functions
         </h4>
         <p>
-          &quot;ART&quot; tokens serve multiple essential purposes within the
-          ecosystem:
+          VAU serves multiple essential purposes within the ecosystem:
         </p>
         <ul className="list-decimal pl-6 space-y-3">
           <li>
             <strong>Primary Transaction Currency:</strong> All VAULT transactions
-            utilize &quot;ART&quot; as the primary medium of exchange.
+            utilize VAU as the primary medium of exchange. This includes
+            marketplace purchases, service payments, and cross-chain operations.
           </li>
           <li>
             <strong>Gas Fee Mechanism:</strong> Network operations require
-            &quot;ART&quot; for gas fees, ensuring efficient resource allocation
-            and spam prevention.
+            VAU for gas fees, ensuring efficient resource allocation
+            and spam prevention. The gas fee structure is dynamically adjusted
+            based on network utilization.
           </li>
           <li>
-            <strong>Staking Operations:</strong> Tokens serve as collateral for
+            <strong>Staking Operations:</strong> VAU serves as collateral for
             network validation, with stakers receiving rewards proportional to
-            their contribution.
+            their contribution. This creates a secure and decentralized
+            consensus mechanism.
           </li>
         </ul>
-
-        <h4 className="text-lg font-semibold mt-6 mb-2">
-          Privacy and Infrastructure
-        </h4>
-        <ul className="list-decimal pl-6 space-y-3">
-          <li>
-            <strong>Zero-knowledge Implementation:</strong> Tokens fund the
-            development and implementation of zero-knowledge proofs, enabling
-            private transactions and data protection within the ecosystem.
-          </li>
-          <li>
-            <strong>Global Node Network:</strong> Strategic investment in global
-            node infrastructure ensures network reliability and performance.
-          </li>
-          <li>
-            <strong>Security Enhancements:</strong> Continuous investment in
-            security improvements and quantum-resistant cryptography research
-            protects the network&apos;s long-term viability.
-          </li>
-        </ul>
-
-        <h4 className="text-lg font-semibold mt-6 mb-2">
-          Distribution Mechanisms
-        </h4>
-        <ul className="list-decimal pl-6 space-y-3">
-          <li>
-            <strong>Airdrops on activity:</strong> Targeted airdrops reward
-            active ecosystem participants and drive adoption.
-          </li>
-          <li>
-            <strong>Validator Rewards:</strong> Staking rewards are distributed
-            according to a transparent APR schedule, encouraging network security
-            and participation.
-          </li>
-          <li>
-            <strong>Community Incentives:</strong> Engagement rewards encourage
-            community participation and ecosystem growth through various
-            contribution mechanisms.
-          </li>
-        </ul>
-
-        <h4 className="text-lg font-semibold mt-6 mb-2">Supply Dynamics</h4>
-        <p>
-          The token supply follows a deflationary model with controlled emission:
-        </p>
-        <p className="font-mono text-sm bg-muted p-3 rounded-lg">
-          Total Supply = Initial Fixed Supply &minus; Burned Tokens + Validator
-          Rewards
-        </p>
 
         <h3 className="text-xl font-semibold mt-8 mb-3">
           Technical Foundation

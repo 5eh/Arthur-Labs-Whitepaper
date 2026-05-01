@@ -38,14 +38,15 @@ export const metadata: Metadata = {
     "QUINN",
     "smart contracts",
     "Web3",
-    "ART token",
+    "HIIE",
+    "AI innovation",
     "oracle validation",
   ],
   authors: [{ name: "Watson Lewis-Rodriguez" }],
   openGraph: {
     title: "Arthur Labs Whitepaper",
     description:
-      "The Blockchain built for the internet. Explore the architecture, systems, and token economics of Arthur Labs.",
+      "The Blockchain built for the internet. Explore the architecture, systems, and AI-driven innovation engine of Arthur Labs.",
     type: "website",
     url: "https://whitepaper.arthurlabs.net",
     siteName: "Arthur Labs Whitepaper",
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arthur Labs Whitepaper",
     description:
-      "The Blockchain built for the internet. Explore the architecture, systems, and token economics of Arthur Labs.",
+      "The Blockchain built for the internet. Explore the architecture, systems, and AI-driven innovation engine of Arthur Labs.",
     creator: "@ArthurLabsDAO",
   },
   robots: {
