@@ -5,7 +5,7 @@ import { Button } from "~~/components/ui/button";
 export const metadata: Metadata = {
   title: "Provided Systems",
   description:
-    "Arthur Labs ecosystem systems — DEAN digital bazaar factory, ROSE Web2 marketplace builder, QUINN marketing automation, SUSAN application builder, and BUILDER website development.",
+    "Arthur Labs ecosystem systems — DEAN digital bazaar factory, ROSE Web2 marketplace builder, QUINN marketing automation, SUSAN application builder, BUILDER website development, and HIIE AI innovation engine.",
   alternates: { canonical: "/systems/" },
 };
 
